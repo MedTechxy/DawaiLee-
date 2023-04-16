@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DawaiLee</title>
+  <link rel="stylesheet" href="/css files/dash.css">
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="/Images/Dr1.png">
+          <span class="nav-item"></span>
+        </a></li>
+      </ul>
+    </nav>
+
+
+    <section class="main" id="#MyProfile">
+      
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Add New Patient</h1>
+          <table class="table" id="myTable">
+            <thead>
+              <tr>
+                <th ></th>
+                <th ></th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  
+                    <form action="Added" method="post">
+                      
+                    <td>Patient Id</td>
+                    <td><input type="number" placeholder="Enter ID" name="Pid" id="Pid" value="<%= Pid%>">
+             
+                        <button type="submit">Search</button></td>
+                     
+                  </tr>
+                </form> 
+                  <tr>
+                    <form action="padd" method="post"> 
+                    <td>Name</td>
+                    
+                  
+               <td>   <% if (name) { %>
+                    <%= name %>
+                  <% } else { %>
+                    -
+                  <% } %></td>
+                </tr>
+                  <tr>
+                    <td>Health History</td>
+                   
+                    <td>   <% if (history) { %>
+                        <%= history %>
+                      <% } else { %>
+                        -
+                      <% } %></td>
+                  </tr>
+                  <tr>
+                    <td>Daignosed with</td>
+                    <td><input type="text" placeholder="&nbsp; Enter Diagnosis" name="Diagnosis" id="Diagnosis"></td>  
+                  </tr>
+
+                  <tr>
+                    <td>Prescription</td>
+                    <td>
+                        <table>
+                            <tbody id="prescriptionTable">
+                              <tr>
+                                <!-- <td><input type="number" placeholder="Med Id"></td> -->
+                                <td><input type="text" placeholder="Medicine" name="medicine"></td>
+                                <td><input type="time" name="time"> <button type="button" id="add-row-button" onclick="createNewRow()">Add Row</button></td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                    </td>
+                  </tr>
+                  <tr><td>Start Date</td>
+                    <td><input type="date" name="Sdate"></td>
+                    </tr>
+                    <tr>
+                    <td >End Date</td>
+                    <td><input type="date" name="Edate"></td>
+                    </tr>
+
+                
+                <tr class="active">
+                            <td><a href="/DrDash"><button>Add Patient</button></a></form>  
+              </tr>
+            
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+  
+  <script>
+    function createNewRow() {
+      var table = document.getElementById("prescriptionTable");
+      var row = table.insertRow(-1);
+      // var cell1 = row.insertCell(0);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      // cell1.innerHTML = "<input type='text' placeholder='Med Id'>";
+      cell1.innerHTML = "<input type='text' placeholder='Medicine' name='medicine'>";
+      cell2.innerHTML = "<input type='time' name='time'>";
+    }
+  </script>
+
+</body>
+</html>
