@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DawaiLee</title>
+  <link rel="stylesheet" href="./css files/dash.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <script src="./dash.js"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="./patient1.png">
+          <span class="nav-item">Doctor</span>
+        </a></li>
+        <li><a href="./Patientdash.html">
+          <i class="fas fa-menorah"></i>
+          <span class="nav-item">Dashboard</span>
+        </a></li>
+        <li><a href="#Message">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Message</span>
+        </a></li>
+        <li><a href="./Appoinments.html">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Appoinments</span>
+        </a></li>
+        <li><a href="./MyProfile.html">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">My Profile</span>
+        </a></li>
+
+        <li><a href="#" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+
+
+    <section class="main" id="Message">
+      
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Message List</h1>
+          <table class="table" id="myTable">
+            <thead>
+              <tr>
+                <th>Dr ID</th>
+                <th>Dr Name</th>
+                <th colspan="2">&nbsp; &nbsp; Message</th>
+                <th></th>
+
+                
+              </tr>
+            </thead>
+            <tbody>
+
+
+
+
+                <tr>
+                    <td><input type="number"></td>
+                    <td><input type="text"></td>
+                    <td></td>
+                    <td><input type="text" style="height: 20pt;width: 200pt;"></td>
+                    <!-- <td><textarea name="Message" id="#" cols="80" rows="2"></textarea></td> -->
+                    <td><button>Send</button></td>
+                    <!-- <td><button>Delete</button></td>   -->
+                  </tr>
+
+              
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>

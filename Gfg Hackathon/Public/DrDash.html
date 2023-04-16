@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DawaiLee</title>
+  <link rel="stylesheet" href="./css files/dash.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <script src="./dash.js"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="./landingpage.html" class="logo">
+          <img src="./Images/Dr1.png">
+          <span class="nav-item">Doctor</span>
+        </a></li>
+        <li><a href="#dashh">
+          <i class="fas fa-menorah"></i>
+          <span class="nav-item">Dashboard</span>
+        </a></li>
+        <li><a href="./DrMessage.html">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Message</span>
+        </a></li>
+        <li><a href="./DrAppoinments.html">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Appoinments</span>
+        </a></li>
+        <li><a href="./DrMyProfile.html">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">My Profile</span>
+        </a></li>
+
+        <li><a href="#" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+
+
+    <section class="main" id="dashh">
+      
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Patients Entries</h1>
+          <table class="table" id="myTable">
+            <thead>
+              <tr style="background-color: aliceblue;">
+                <th></th>
+                <th></th>
+                <th></th>
+              <form action="/AddP" method="post"> 
+                 <th><input type="number" name="Pid" placeholder="&nbsp;Enter PatientId" style="border-radius: 6px;"></th>
+                <th><button onclick="OpenPopup()">Add Patient</button></th>
+              </form>
+              </tr>
+              <tr>
+                <!-- <th>Sr No</th> -->
+                <th>Patient ID</th>
+                <th>Name</th>
+                <th>Appoinment Date</th>
+                <th>Prescribed Medicines</th>
+                <th>Action</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                   <td><a href="./DrDashDetails.html">01</a></td>
+                    <td><a href="./DrDashDetails.html">1001</a></td>
+                    <td><a href="./DrDashDetails.html">Sohel Mistry</a></td>
+                    <td>21-03-2023</td>
+                    <td><button>Prescribe</button></td>
+                    <td><button>Delete</button></td>
+                    
+                  </tr>
+
+              <tr>
+                <td><input type="number" placeholder="&nbsp Patient ID"></td>
+                <td><input type="number" placeholder="&nbsp Name"></td>
+                <td><input type="date"></td>
+                t
+                <td><button>Save</button></td>
+                <td></td>  
+              </tr> -->
+              
+              <tr class="active">
+                <td><button "onclick="addRow()">Add Patient</button>    
+             
+             
+             
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\css files\PatientSignup.css">
+    <title>DawaiLee</title>
+    <script src="./Script/signup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+         <h1 style="margin-left: 5%;">Dawai</h1><h1 style="color:#20DF7F ;">Lee?</h1>
+        </div>
+       
+        <div class="Loginform">
+         <div class="LoginName">
+               <h2>SignUp</h2>
+         </div>
+         <div class="dontacc">
+            <p>Already have account, &nbsp</p><a href="/PatientLogin.html" style="color: #20DF7F; font-size:120%;">Login</a>  
+         </div>
+         <br>
+         <div> 
+             <form onsubmit="return validate()" action="/psignup" method="post">
+                <input type="text"placeholder="&nbsp Name" name="name" class="inpclass" id="name"><br><br>
+             <input type="number" placeholder="&nbsp Phone" name="phone" class="inpclass" id="phone" maxlength="10"><br>
+             <label id="phlabel" style="color:red; visibility:hidden;">Invalid phone number</label><br><br>
+             
+             <input type="email"placeholder="&nbsp Email" name="email" class="inpclass" id="email"><br>
+             <label id="phemail" style="color:red; visibility:hidden;">Invalid email format</label><br><br>
+
+             <input type="password" placeholder="&nbsp Password" name="password" class="inpclass" id="password"><br>
+             <label id="phpass" style="color:red; visibility:hidden;">Invalid pasword </label><br>
+             
+             <input type="date" placeholder="&nbsp; Birthdate" name="birthdate" class="inpclass" id="birthdate"><br><br>
+             
+             <input type="Number" placeholder="&nbsp Pincode" name="pincode" class="inpclass" id="pincode"><br>    
+             
+             <p class="Gend" id="gender" name="gender">Gender:<input type="radio" name="gender" value="Male">Male
+             
+            <input type="radio" name="gender" value="Female">Female</p><br>
+            
+            <p class="Condition" id="conditions" name="conditions">
+             Previous Health Conditions<br>
+            <input type="checkbox" name="conditions[]" value="Diabetes">1.Diabetes<br>
+            <input type="checkbox" name="conditions[]" value="HBP">2.High blood Pressure<br>
+            <input type="checkbox" name="conditions[]" value="LBP">3.Low blood Pressure
+            </p><br>
+             
+            <input type="checkbox" required><p>&nbsp I Agree Terms & Conditions</p><br>
+            <a href="./Dashboard/Patient/Patientdash.html" style="margin-right: 28px;">
+            <button>Submit</button></a>
+         </div>
+        
+        </div>
+        <br>
+     
+     </div>
+</body>
+</html>

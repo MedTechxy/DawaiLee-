@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\css files\PatientLogin.css">
+    <script src="./Script/login.js"></script>
+    <title>DawaiLee</title>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+        <h1 style="margin-left: 5%;">Dawai</h1><h1 style="color:#20DF7F ;">Lee?</h1>
+       </div>
+      
+       <div class="Loginform">
+        <div class="LoginName">
+              <h2>Login</h2>
+        </div>
+        <div class="dontacc">
+           <p>Don’t have account,</p><a href=".\PatientSignup.html" style="color: #20DF7F; font-size: 120%;">SignUp </p> </a> 
+        </div>
+        <br>
+    
+            <form onsubmit="return validation()" action="/pLogin" method="post">
+            <input type="email" placeholder="&nbsp Email" name="email" class="inpclass" id="email"><br><br>
+            <label id="Lemail" style="color:red; visibility:hidden;">Invalid Email format</label><br>
+            <input type="password"placeholder="&nbsp Password" name="password" class="inpclass" id="password"><br><br>
+            <label id="LPass" style="color:red; visibility:hidden;">Invalid Password</label><br>
+            <input type="checkbox"><p>Remember Me</p>
+            <a href="./Patientdash.html">Forgot password</a><br>
+            <button type="submit"> Login</button>
+          </form>
+    
+       
+       </div>
+       <br>
+    
+    </div>
+    
+</body>
+</html>
